@@ -9,12 +9,28 @@
 }
 
 body {
-  background-image: url(confetti.jpg);
+  background-image: url(bingocards.png);
   background-size: cover;
   background-position: center;
   font-family: Lato;
   font-weight: 300;
   position: relative;
   height: 100vh;
-  color: #555;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  height: 65%;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 13%;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+.col {
 }
