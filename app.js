@@ -2,15 +2,15 @@ var currentNumber, currentLetter, currentBall, chosenBalls, ballsRemaining;
 
 chosenBalls = [];
 let possibleBalls = [
-  "B 1",
-  "B 2",
-  "B 3",
-  "B 4",
-  "B 5",
-  "B 6",
-  "B 7",
-  "B 8",
-  "B 9",
+  "B 01",
+  "B 02",
+  "B 03",
+  "B 04",
+  "B 05",
+  "B 06",
+  "B 07",
+  "B 08",
+  "B 09",
   "B 10",
   "B 11",
   "B 12",
@@ -88,8 +88,11 @@ function ballDrop() {
   currentNumber =
     possibleBalls[Math.floor(Math.random() * possibleBalls.length)];
 
-  //Display it in current ball spot
+  //Display it in current ball spot and grid
   document.querySelector(".ball-number").textContent = currentNumber;
+  document.querySelector(
+    `#square${currentNumber.charAt(2)}${currentNumber.charAt(3)}`
+  ).textContent = `${currentNumber.charAt(2)}${currentNumber.charAt(3)}`;
 
   //Take out that pulled 'ball' from array
   possibleBalls.splice(currentNumber, 1);
