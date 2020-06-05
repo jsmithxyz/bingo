@@ -84,9 +84,10 @@ var ballButton = document.getElementById("ball");
 ballButton.addEventListener("click", ballDrop);
 
 function ballDrop() {
+  event.preventDefault();
   //Pull random 'ball' from array
-  currentNumber =
-    possibleBalls[Math.floor(Math.random() * possibleBalls.length)];
+  let randomNumber = Math.floor(Math.random() * possibleBalls.length);
+  currentNumber = possibleBalls[randomNumber];
 
   //Display it in current ball spot and grid
   document.querySelector(".ball-number").textContent = currentNumber;
@@ -95,7 +96,8 @@ function ballDrop() {
   ).textContent = `${currentNumber.charAt(2)}${currentNumber.charAt(3)}`;
 
   //Take out that pulled 'ball' from array
-  possibleBalls.splice(currentNumber, 1);
+  possibleBalls.splice(randomNumber, 1);
+  console.log(possibleBalls);
 
   //Place chosen ball into group of chosen balls for this round
   chosenBalls.push(currentNumber);
