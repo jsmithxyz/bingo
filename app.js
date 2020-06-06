@@ -1,6 +1,5 @@
-var currentNumber, currentLetter, currentBall, chosenBalls, ballsRemaining;
+var currentNumber, currentLetter, currentBall, ballsRemaining;
 
-chosenBalls = [];
 let possibleBalls = [
   "B 01",
   "B 02",
@@ -80,8 +79,10 @@ let possibleBalls = [
 ];
 
 var ballButton = document.getElementById("ball");
+var cardButton = document.getElementById("card");
 
 ballButton.addEventListener("click", ballDrop);
+cardButton.addEventListener("click", clearCard);
 
 function ballDrop() {
   event.preventDefault();
@@ -104,12 +105,13 @@ function ballDrop() {
   possibleBalls.splice(randomNumber, 1);
   console.log(possibleBalls);
 
-  //Place chosen ball into group of chosen balls for this round
-  chosenBalls.push(currentNumber);
-
   //Set Balls Remaining
   ballsRemaining = possibleBalls.length;
   document.getElementById(
     "balls-remaining"
   ).textContent = `Balls Remaining: ${ballsRemaining}`;
+}
+
+function clearCard() {
+  window.location.reload();
 }
