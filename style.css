@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(bingocards.png);
+  background-image: url(./images/bingobackground.png);
   background-size: cover;
   background-position: center;
   font-family: Lato;
@@ -23,7 +23,7 @@ body {
 
 .row {
   height: 65%;
-  width: 80%;
+  width: 65%;
   margin-right: auto;
   margin-left: auto;
   margin-top: 13%;
@@ -68,8 +68,8 @@ body {
 
 #card {
   height: fit-content;
-  margin-top: 20%;
-  margin-left: 48%;
+  margin-top: 30%;
+  margin-left: 50%;
   border: none;
   background-color: transparent;
   outline: none;
