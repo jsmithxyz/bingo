@@ -91,6 +91,11 @@ function ballDrop() {
 
   //Display it in current ball spot and grid
   document.querySelector(".ball-number").textContent = currentNumber;
+
+  document
+    .querySelector(".current-ball")
+    .classList.add("animate__animated", "animate__slideInRight");
+
   document.querySelector(
     `#square${currentNumber.charAt(2)}${currentNumber.charAt(3)}`
   ).textContent = `${currentNumber.charAt(2)}${currentNumber.charAt(3)}`;

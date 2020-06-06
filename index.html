@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <link type="text/css" rel="stylesheet" href="style.css" />
 
     <link
@@ -11,20 +14,25 @@
       rel="stylesheet"
     />
 
+  
+
     <title>Bingo</title>
   </head>
 
   <body>
     <div class="row">
-      <div class="col-4">
-        <div class="current-ball">
-          <div class="ball-number">&#9899</div>
-        </div>
-      </div>
-      <div class="col-4" id="middle-column">
+      <div class="col-4" id="first-column">
         <button id="ball">
           <img src="balldropper2.png" alt="Drop Ball Button" />
         </button>
+        <button id="card">
+          <img src="bingo (2).png" alt="Clear Card Button" />
+        </button>
+      </div>
+      <div class="col-4" id="middle-column">
+        <div class="current-ball">
+          <div class="ball-number">&#9899</div>
+        </div>
       </div>
       <div class="col-4" id="third-column">
         <div class="called-balls-container">
