@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
     <link type="text/css" rel="stylesheet" href="style.css" />
 
     <link
@@ -14,27 +14,19 @@
       rel="stylesheet"
     />
 
-  
-
     <title>Bingo</title>
   </head>
 
   <body>
     <div class="row">
-      <div class="col-4" id="first-column">
-        <button id="ball">
-          <img src="./images/balldropper.png" alt="Drop Ball Button" />
-        </button>
-        <button id="card">
-          <img src="./images/bingocard.png" alt="Clear Card Button" />
-        </button>
-      </div>
-      <div class="col-4" id="middle-column">
+      <div class="col-1">
+        <h2 id="balls-remaining">Balls Remaining: 75</h2>
         <div class="current-ball">
-          <div class="ball-number">&#9899</div>
+          <div class="ball-number"></div>
         </div>
       </div>
-      <div class="col-4" id="third-column">
+
+      <div class="col-2">
         <div class="called-balls-container">
           <table id="bingotable">
             <tr class="table-row">
@@ -45,113 +37,123 @@
               <th class="card-header">O</th>
             </tr>
             <tr class="table-row">
-              <td id="square01"> &nbsp;</td>
-              <td id="square16"> &nbsp;</td>
-              <td id="square31"> &nbsp;</td>
-              <td id="square46"> &nbsp;</td>
-              <td id="square61"> &nbsp;</td>
+              <td id="square01">&nbsp;</td>
+              <td id="square16">&nbsp;</td>
+              <td id="square31">&nbsp;</td>
+              <td id="square46">&nbsp;</td>
+              <td id="square61">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square02"> &nbsp;</td>
-              <td id="square17"> &nbsp;</td>
-              <td id="square32"> &nbsp;</td>
-              <td id="square47"> &nbsp;</td>
-              <td id="square62"> &nbsp;</td>
+              <td id="square02">&nbsp;</td>
+              <td id="square17">&nbsp;</td>
+              <td id="square32">&nbsp;</td>
+              <td id="square47">&nbsp;</td>
+              <td id="square62">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square03"> &nbsp;</td>
-              <td id="square18"> &nbsp;</td>
-              <td id="square33"> &nbsp;</td>
-              <td id="square48"> &nbsp;</td>
-              <td id="square63"> &nbsp;</td>
+              <td id="square03">&nbsp;</td>
+              <td id="square18">&nbsp;</td>
+              <td id="square33">&nbsp;</td>
+              <td id="square48">&nbsp;</td>
+              <td id="square63">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square04"> &nbsp;</td>
-              <td id="square19"> &nbsp;</td>
-              <td id="square34"> &nbsp;</td>
-              <td id="square49"> &nbsp;</td>
-              <td id="square64"> &nbsp;</td>
+              <td id="square04">&nbsp;</td>
+              <td id="square19">&nbsp;</td>
+              <td id="square34">&nbsp;</td>
+              <td id="square49">&nbsp;</td>
+              <td id="square64">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square05"> &nbsp;</td>
-              <td id="square20"> &nbsp;</td>
-              <td id="square35"> &nbsp;</td>
-              <td id="square50"> &nbsp;</td>
-              <td id="square65"> &nbsp;</td>
+              <td id="square05">&nbsp;</td>
+              <td id="square20">&nbsp;</td>
+              <td id="square35">&nbsp;</td>
+              <td id="square50">&nbsp;</td>
+              <td id="square65">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square06"> &nbsp;</td>
-              <td id="square21"> &nbsp;</td>
-              <td id="square36"> &nbsp;</td>
-              <td id="square51"> &nbsp;</td>
-              <td id="square66"> &nbsp;</td>
+              <td id="square06">&nbsp;</td>
+              <td id="square21">&nbsp;</td>
+              <td id="square36">&nbsp;</td>
+              <td id="square51">&nbsp;</td>
+              <td id="square66">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square07"> &nbsp;</td>
-              <td id="square22"> &nbsp;</td>
-              <td id="square37"> &nbsp;</td>
-              <td id="square52"> &nbsp;</td>
-              <td id="square67"> &nbsp;</td>
+              <td id="square07">&nbsp;</td>
+              <td id="square22">&nbsp;</td>
+              <td id="square37">&nbsp;</td>
+              <td id="square52">&nbsp;</td>
+              <td id="square67">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square08"> &nbsp;</td>
-              <td id="square23"> &nbsp;</td>
-              <td id="square38"> &nbsp;</td>
-              <td id="square53"> &nbsp;</td>
-              <td id="square68"> &nbsp;</td>
+              <td id="square08">&nbsp;</td>
+              <td id="square23">&nbsp;</td>
+              <td id="square38">&nbsp;</td>
+              <td id="square53">&nbsp;</td>
+              <td id="square68">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square09"> &nbsp;</td>
-              <td id="square24"> &nbsp;</td>
-              <td id="square39"> &nbsp;</td>
-              <td id="square54"> &nbsp;</td>
-              <td id="square69"> &nbsp;</td>
+              <td id="square09">&nbsp;</td>
+              <td id="square24">&nbsp;</td>
+              <td id="square39">&nbsp;</td>
+              <td id="square54">&nbsp;</td>
+              <td id="square69">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square10"> &nbsp;</td>
-              <td id="square25"> &nbsp;</td>
-              <td id="square40"> &nbsp;</td>
-              <td id="square55"> &nbsp;</td>
-              <td id="square70"> &nbsp;</td>
+              <td id="square10">&nbsp;</td>
+              <td id="square25">&nbsp;</td>
+              <td id="square40">&nbsp;</td>
+              <td id="square55">&nbsp;</td>
+              <td id="square70">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square11"> &nbsp;</td>
-              <td id="square26"> &nbsp;</td>
-              <td id="square41"> &nbsp;</td>
-              <td id="square56"> &nbsp;</td>
-              <td id="square71"> &nbsp;</td>
+              <td id="square11">&nbsp;</td>
+              <td id="square26">&nbsp;</td>
+              <td id="square41">&nbsp;</td>
+              <td id="square56">&nbsp;</td>
+              <td id="square71">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square12"> &nbsp;</td>
-              <td id="square27"> &nbsp;</td>
-              <td id="square42"> &nbsp;</td>
-              <td id="square57"> &nbsp;</td>
-              <td id="square72"> &nbsp;</td>
+              <td id="square12">&nbsp;</td>
+              <td id="square27">&nbsp;</td>
+              <td id="square42">&nbsp;</td>
+              <td id="square57">&nbsp;</td>
+              <td id="square72">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square13"> &nbsp;</td>
-              <td id="square28"> &nbsp;</td>
-              <td id="square43"> &nbsp;</td>
-              <td id="square58"> &nbsp;</td>
-              <td id="square73"> &nbsp;</td>
+              <td id="square13">&nbsp;</td>
+              <td id="square28">&nbsp;</td>
+              <td id="square43">&nbsp;</td>
+              <td id="square58">&nbsp;</td>
+              <td id="square73">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square14"> &nbsp;</td>
-              <td id="square29"> &nbsp;</td>
-              <td id="square44"> &nbsp;</td>
-              <td id="square59"> &nbsp;</td>
-              <td id="square74"> &nbsp;</td>
+              <td id="square14">&nbsp;</td>
+              <td id="square29">&nbsp;</td>
+              <td id="square44">&nbsp;</td>
+              <td id="square59">&nbsp;</td>
+              <td id="square74">&nbsp;</td>
             </tr>
             <tr class="table-row">
-              <td id="square15"> &nbsp;</td>
-              <td id="square30"> &nbsp;</td>
-              <td id="square45"> &nbsp;</td>
-              <td id="square60"> &nbsp;</td>
-              <td id="square75"> &nbsp;</td>
+              <td id="square15">&nbsp;</td>
+              <td id="square30">&nbsp;</td>
+              <td id="square45">&nbsp;</td>
+              <td id="square60">&nbsp;</td>
+              <td id="square75">&nbsp;</td>
             </tr>
           </table>
         </div>
-        <h2 id="balls-remaining"></h2>
+      </div>
+      <div class="col-3">
+        <div class="ball-dropper-container">
+          <button id="ball">
+            <img
+              src="./images/bingo (5).png"
+              alt="Drop Ball Button"
+              id="ball-dropper-icon"
+            />
+          </button>
+        </div>
       </div>
     </div>
 
