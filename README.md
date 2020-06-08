@@ -18,8 +18,9 @@ It utilizes vanilla Javascript, Google Fonts, and Image from Pixabay , and icons
 
 - Experience the deployed app: [Here](https://jsmithxyz.github.io/bingo/ "Here")
 - Upon entering the app, the user will be served a blank bingo grid that will display all possible bingo choices, from B1-O75 when chosen from the ball cage.
-- To begin a game, simply click on the Ball Cage icon. If you want to clear the grid, or start a new game, click the bingo card.
-- Underneath the bingo grid, Balls Remaining in that particular session will be displayed.
+- To begin a game, simply click on the Ball Cage icon.
+- Above the current ball, Balls Remaining in that particular session will be displayed.
+- The application is mobile friendly, and can be used on all devices.
 
 ## Demonstrations
 
@@ -35,7 +36,6 @@ It utilizes vanilla Javascript, Google Fonts, and Image from Pixabay , and icons
 
 ## Future Development
 
-- Make it mobile-friendly
 - Add an interactive Bingo Card so you can play the whole game on your desktop
 
 ## Contributers
