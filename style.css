@@ -18,6 +18,7 @@ body {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 5%;
 }
 
 @media (min-width: 769px) {
@@ -30,7 +31,7 @@ body {
     height: fit-content;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 5%;
+
     background-color: white;
     border-style: solid;
     border-width: 1px;
@@ -164,7 +165,6 @@ body {
   th,
   td {
     font-family: "Abril Fatface", cursive;
-
     margin: 0 auto;
     text-align: center;
     border: 1px solid black;
@@ -187,6 +187,10 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
   }
 
   .col-1 {
@@ -281,6 +285,10 @@ body {
     text-align: center;
     background-color: transparent;
     border: solid;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
   }
 
   .table-row {
@@ -321,6 +329,10 @@ body {
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+      0 100px 80px rgba(0, 0, 0, 0.12);
   }
 
   .col-1 {
@@ -354,6 +366,9 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072);
   }
 
   .ball-number {
@@ -384,6 +399,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    margin-bottom: 20%;
   }
 
   #card {
@@ -412,6 +428,9 @@ body {
     text-align: center;
     background-color: transparent;
     border: solid;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+      0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(0, 0, 0, 0.072);
   }
 
   .table-row {
@@ -428,7 +447,7 @@ body {
 
   th,
   td {
-    font-family: Helvetica;
+    font-family: "Abril Fatface", cursive;
     margin: 0 auto;
     text-align: center;
     border: 1px solid black;
