@@ -82,6 +82,7 @@ var ballButton = document.getElementById("ball");
 var cardButton = document.getElementById("card");
 
 ballButton.addEventListener("click", ballDrop);
+cardButton.addEventListener("click", clearCard);
 
 function ballDrop() {
   event.preventDefault();
