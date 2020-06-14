@@ -6,7 +6,11 @@
 
 body {
   height: 100vh;
+  background-image: url(./images/confetti.jpg);
+  background-position: center;
+  background-size: cover;
   width: 90%;
+  padding-top: 2%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -14,9 +18,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 60%;
+  width: 50%;
+
   background: black;
-  border: 0.02em solid rgb(42, 161, 90);
+  border: 0.1em solid black;
   border-radius: 5px;
   margin-top: 2%;
 }
@@ -39,4 +44,26 @@ tr {
 th {
   background-color: rgb(42, 161, 90);
   color: yellow;
+}
+
+.container {
+  display: flex;
+}
+
+button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#trigger:active {
+  outline: black;
+  opacity: 50%;
+}
+
+#trigger:focus {
+  outline: none;
 }
